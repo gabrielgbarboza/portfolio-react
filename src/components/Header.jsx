@@ -1,5 +1,6 @@
 import gabriel from "../../src/img/gabriel.svg";
 import st from "../../src/styles/Header.module.sass";
+
 export default function Header() {
   return (
     <header className={st.appHeader}>
