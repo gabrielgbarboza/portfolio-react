@@ -1,19 +1,25 @@
-import logo from "../../src/logo.svg";
+import gabriel from "../../src/img/gabriel.svg";
+import st from "../../src/styles/Header.module.sass";
 export default function Header() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <header className={st.appHeader}>
+      <img src={gabriel} alt="" />
+      <nav>
+        <ul className={st.headerMenu}>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#cursos">Cursos</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
