@@ -1,0 +1,56 @@
+.app-Introducao
+  display: grid
+  grid-template-columns: 1fr 1fr
+  place-self: center
+  margin-top: 22px
+
+.introducao-descricao
+  gap: 8px
+  margin-right: 100px
+  place-content: center
+  
+.introducao-contato
+  display: flex
+  gap: 16px
+  margin-top: 35px
+  
+
+  a
+    font-family: 'Manrope'
+    font-weight: bold
+    font-size: 1.6rem
+    line-height: 1em
+    padding: 16px 50px 16px 20px
+    place-self: center
+    background: #D3E97A
+    text-decoration: none
+    color: #0a0a0a
+    border-radius: 50px
+    display: block
+    position: relative
+    &::after
+      content: ' '' '
+      width: 8px
+      height: 8px
+      background-color: #0a0a0a
+      border-radius: 50%
+      position: absolute
+      top: calc(50% - 7px)
+      transform: translateY(50%)
+      right: 13px
+
+  img
+    max-width: 54px
+    max-height: 54px
+
+  
+
+  
+.introducao-Foto
+  max-width: 611px
+  border-radius: 10px
+
+
+
+
+
