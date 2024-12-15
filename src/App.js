@@ -1,4 +1,4 @@
-import "./global.sass";
+import "./assets/styles/global.sass";
 import Header from "./components/Header.jsx";
 import Introducao from "./components/Introducao.jsx";
 
