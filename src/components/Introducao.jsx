@@ -2,6 +2,7 @@ import logoLinkedin from "../assets/img/logoLinkedin.svg";
 import logoGithub from "../assets/img/logoGithub.svg";
 import gabrielIntroducao from "../assets/img/gabrielIntroducao.png";
 import st from "../assets/styles/Introducao.module.sass";
+import cn from "classnames";
 
 export default function Introducao() {
   return (
