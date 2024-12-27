@@ -4,16 +4,7 @@ import arrow from '../assets/img/arrow.svg';
 import logoGithubGreen from '../assets/img/logoGithubGreen.svg';
 import cn from 'classnames';
 
-export default function ProjetoItems({
-  tipoProjeto,
-  imagemProjeto,
-  titutloProjeto,
-  detalheProjeto,
-  anoProjeto,
-  areaProjeto,
-  verProjeto,
-  githubProjeto,
-}) {
+export default function ProjetoItems() {
   const projetosItems = [
     {
       tipoProjeto: 'Conceptual Work',
@@ -51,7 +42,7 @@ export default function ProjetoItems({
   ];
 
   return (
-    <div className={cn('container')}>
+    <div>
       {projetosItems.map(
         (
           {
