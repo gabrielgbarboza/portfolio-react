@@ -2,7 +2,6 @@ import st from '../assets/styles/Projetos.module.sass';
 import imagemTeste from '../assets/img/cardTeste.png';
 import arrow from '../assets/img/arrow.svg';
 import logoGithubGreen from '../assets/img/logoGithubGreen.svg';
-import cn from 'classnames';
 
 export default function ProjetoItems() {
   const projetosItems = [
@@ -42,7 +41,7 @@ export default function ProjetoItems() {
   ];
 
   return (
-    <div>
+    <section aria-label='Projetos'>
       {projetosItems.map(
         (
           {
@@ -57,10 +56,17 @@ export default function ProjetoItems() {
           },
           index
         ) => (
-          <div key={index} className={st.projetosContainer}>
+          <article
+            key={index}
+            className={st.projetosContainer}
+            aria-label={`Projeto: ${titutloProjeto}`}
+          >
             <div className={st.projetosImagem}>
               <span>{tipoProjeto}</span>
-              <img src={imagemProjeto} alt='Card Hora da Aventura' />
+              <img
+                src={imagemProjeto}
+                alt={`Imagem do projeto ${titutloProjeto}`}
+              />
             </div>
             <div className={st.projetosDescricao}>
               <h3 className='text title-manrope'>{titutloProjeto}</h3>
@@ -77,19 +83,19 @@ export default function ProjetoItems() {
                 </div>
               </div>
               <div className={st.projetosDescricaoLinks}>
-                <a href='/'>
+                <a href='/' aria-label={`Live demo for ${titutloProjeto}`}>
                   {verProjeto}{' '}
                   <img className={st.imgArrow} src={arrow} alt='' />
                 </a>
-                <a href='/'>
+                <a href='/' aria-label={`See ${titutloProjeto} on GitHub`}>
                   {githubProjeto}{' '}
                   <img className={st.imgGithub} src={logoGithubGreen} alt='' />{' '}
                 </a>
               </div>
             </div>
-          </div>
+          </article>
         )
       )}
-    </div>
+    </section>
   );
 }
