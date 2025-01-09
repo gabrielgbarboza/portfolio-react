@@ -3,10 +3,10 @@ import cn from 'classnames';
 import ContentCard from './ContentCard.jsx';
 import imagemTeste from '../assets/img/cardTeste.png';
 
-const projetosCards = [
+const cursosCards = [
   {
-    type: 'Projetos',
-    tipo: 'Conceptual Work',
+    type: 'Curso',
+    tipo: 'Alura',
     imagem: imagemTeste,
     titutlo: 'Promotional landing page for our favorite show',
     detalhe:
@@ -18,18 +18,18 @@ const projetosCards = [
   },
 ];
 
-export default function Projetos() {
+export default function Cursos() {
   return (
     <section className={cn('container')} aria-label='Projetos Pessoais'>
       <header className={st.cardsIntroducao}>
-        <h2 className='title medium-size'>Projetos Pessoais</h2>
+        <h2 className='title medium-size'>Cursos e cetificações</h2>
         <p className='text'>
           {' '}
-          Aqui estão alguns dos projetos selecionados que demonstram experiência
-          com desenvolvimento front-end.{' '}
+          Aqui estão alguns dos cursos realizados que demonstram experiência com
+          desenvolvimento front-end.{' '}
         </p>
       </header>
-      <ContentCard items={projetosCards} />
+      <ContentCard items={cursosCards} />
     </section>
   );
 }
