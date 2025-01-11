@@ -5,11 +5,16 @@ import logoGithub from '../assets/img/logoGithub.svg';
 
 export default function Contato() {
   return (
-    <section className={cn('container')}>
+    <section id='contato' className={cn('container')}>
       <section className={st.contato}>
         <div>
           <h1 className='title medium-size'>Contate-me</h1>
-          <p className='text'>Mande um olá para gabrielgbarbozadev@gmail.com</p>
+          <p className='text'>
+            Mande um olá para&nbsp;
+            <a className='text' href='mailto:gabrielgbarbozadev@gmail'>
+              gabrielgbarbozadev@gmail.com
+            </a>
+          </p>
           <span className='text'>
             Para mais informações, acesse os links abaixo
           </span>

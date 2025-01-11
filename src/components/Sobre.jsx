@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 export default function SobreMim() {
   return (
-    <section className={cn('container')} aria-label='Sobre Mim'>
+    <section id='sobre' className={cn('container')} aria-label='Sobre Mim'>
       <section className={st.sobreContainer}>
         <div>
           <h1 className='title large-size'>Sobre Mim</h1>

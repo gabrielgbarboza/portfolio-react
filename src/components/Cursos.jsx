@@ -20,7 +20,7 @@ const cursosCards = [
 
 export default function Cursos() {
   return (
-    <section className={cn('container')} aria-label='Projetos Pessoais'>
+    <section id='cursos' className={cn('container')} aria-label='Cursos'>
       <header className={st.cardsIntroducao}>
         <h2 className='title medium-size'>Cursos e cetificações</h2>
         <p className='text'>

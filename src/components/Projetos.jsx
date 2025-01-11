@@ -21,7 +21,7 @@ const projetosCards = [
 export default function Projetos() {
   return (
     <section className={cn('container')} aria-label='Projetos Pessoais'>
-      <header className={st.cardsIntroducao}>
+      <header id='projetos' className={st.cardsIntroducao}>
         <h2 className='title medium-size'>Projetos Pessoais</h2>
         <p className='text'>
           {' '}
