@@ -23,8 +23,13 @@ export default function Header() {
   return (
     <header className={st.appHeader}>
       <img src={gabriel} alt='Foto de Gabriel' />
+      <button
+        data-menu='button'
+        arial-expanded='false'
+        ariacontrols='menu'
+      ></button>
       <nav aria-label='Menu Principal'>
-        <ul className={st.headerMenu}>
+        <ul data-menu='list' className={st.headerMenu}>
           {navItems.map(({ text, href }, index) => (
             <li key={index}>
               <a href={href}>{text}</a>

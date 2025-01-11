@@ -21,6 +21,57 @@
     display: block
     font-size: 1.8rem
     line-height: 1em
+
+[data-menu='button'] 
+  display: none
+
+@media (max-width: 800px)
+  [data-menu='button']
+    display: flex
+    background:  #0a0a0a
+    border: none
+    padding: 15px 10px
+    align-items: center
+    position: absolute
+    left: 90%
+    
+
+    &::before
+      content: ' '
+      display: inline-block
+      height: 2px
+      width: 32px
+      background: #C7C7C7
+      box-shadow: 0 12px #c7c7c7, 0 -12px  #c7c7c7
+      z-index: 300
+      
+
+  [data-menu='list']
+    display: block
+    position: absolute
+    top: 0
+    left: 88.5%
+    background: #0a0a0a
+    max-width: 120px
+    z-index: 200
+    padding: 60px 0 5px 0
+    border-radius: 10px
+    box-shadow: 2px 2px 2px 0 #0a0a0a
+
+  .header-menu 
+    a
+      padding: 8px 12px
+  
+  .app-header
+    img
+      max-width: 200px
+      height: 100%
+ 
+
+    
+    
+
+
     
 
 
