@@ -1,4 +1,4 @@
-import st from '../assets/styles/Projetos.module.sass';
+import st from '../assets/styles/ProjetosECursos.module.sass';
 import arrow from '../assets/img/arrow.svg';
 import logoGithubGreen from '../assets/img/logoGithubGreen.svg';
 
@@ -28,11 +28,11 @@ export default function ContentCard({ items }) {
               <div className={st.cardDescricaoDados}>
                 <h4>PROJECT INFO</h4>
                 <div>
-                  <span>Year</span>
+                  <span>Ano</span>
                   <span>{ano}</span>
                 </div>
                 <div>
-                  <span>Role</span>
+                  <span>Área</span>
                   <span>{area}</span>
                 </div>
               </div>

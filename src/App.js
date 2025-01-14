@@ -12,9 +12,9 @@ function App() {
       <Header />
       <main>
         <Introducao />
+        <SobreMim />
         <Projetos />
         <Cursos />
-        <SobreMim />
         <Contato />
       </main>
     </div>

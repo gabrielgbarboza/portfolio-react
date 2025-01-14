@@ -22,20 +22,19 @@
     font-size: 1.8rem
     line-height: 1em
 
-[data-menu='button'] 
+.header-botao
   display: none
 
 @media (max-width: 800px)
-  [data-menu='button']
+  .header-botao
     display: flex
     background:  #0a0a0a
     border: none
     padding: 15px 10px
     align-items: center
     position: absolute
-    left: 90%
+    left: 100%
     
-
     &::before
       content: ' '
       display: inline-block
@@ -46,17 +45,23 @@
       z-index: 300
       
 
-  [data-menu='list']
+  .header-menu
     display: block
-    position: absolute
-    top: 0
-    left: 88.5%
     background: #0a0a0a
     max-width: 120px
-    z-index: 200
+    left: 100%
+    position: absolute
+    z-index: -1
+    opacity: 0
     padding: 60px 0 5px 0
     border-radius: 10px
     box-shadow: 2px 2px 2px 0 #0a0a0a
+    transition: .5s opacity
+    &.active
+      z-index: 200
+      opacity: 1
+
+      
 
   .header-menu 
     a

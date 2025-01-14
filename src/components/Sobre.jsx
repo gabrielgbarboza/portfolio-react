@@ -10,17 +10,18 @@ export default function SobreMim() {
         </div>
         <div className={st.sobreDescricao}>
           <p className='text title-manrope'>
-            I am a front-end developer based in Sydney. Has Mechanical
-            Engineering background.
+            Desenvolverdor Web, focado em JavaScript e React.js
           </p>
           <p className='text'>
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has Mechanical Engineering background. Likes to focus
-            on accessibility when developing. Passionate and curious about
-            solving problems. Currently, I’m exploring Reactjs, Webflow and a
-            bit of Designing. While I am not programming, I enjoy playing
-            football, photography and playing Valorant. Learning more to improve
-            skill.
+            Educador em transição para Desenvolvimento Web, com foco em lógica
+            de programação e JavaScript. Estou buscando oportunidades de estágio
+            ou programas de trainee para aplicar minhas habilidades em projetos
+            reais. Minha experiência como professor e pesquisador desenvolveu
+            minhas habilidades interpessoais e organizacionais, como comunicação
+            clara, trabalho em equipe e adaptabilidade — essenciais para
+            ambientes colaborativos e ágeis. Atualmente, estou construindo uma
+            base sólida em desenvolvimento web, com foco em dominar JavaScript e
+            as melhores práticas de programação.
           </p>
         </div>
         <section className={st.sobreHabilidades}>
@@ -29,9 +30,9 @@ export default function SobreMim() {
           </div>
           <div>
             <p className='text'>
-              I am always looking to add more skills.Morbi egestas neque eu
-              blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at
-              purus faucibus tristique ut et dolor.{' '}
+              Estou construindo uma base sólida em Desenvolvimento Web e Lógica
+              de Programação. Tenho facilidade em aprender rapidamente e trago
+              uma excelente bagagem interpessoal.{' '}
             </p>
           </div>
           <div className={st.listaHabilidades}>

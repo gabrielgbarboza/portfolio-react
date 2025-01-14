@@ -1,15 +1,17 @@
 import gabriel from '../assets/img/gabriel.svg';
 import st from '../assets/styles/Header.module.sass';
+import { useState } from 'react';
+import cn from 'classnames';
 
 export default function Header() {
   const navItems = [
     {
-      href: '#projetos',
-      text: 'Projetos',
-    },
-    {
       href: '#sobre',
       text: 'Sobre',
+    },
+    {
+      href: '#projetos',
+      text: 'Projetos',
     },
     {
       href: '#cursos',
@@ -20,16 +22,18 @@ export default function Header() {
       text: 'Contato',
     },
   ];
+
+  const [menuMobile, setMenuMobile] = useState(false);
+
   return (
     <header className={st.appHeader}>
       <img src={gabriel} alt='Foto de Gabriel' />
       <button
-        data-menu='button'
-        arial-expanded='false'
-        ariacontrols='menu'
+        className={st.headerBotao}
+        onClick={() => setMenuMobile(!menuMobile)}
       ></button>
-      <nav aria-label='Menu Principal'>
-        <ul data-menu='list' className={st.headerMenu}>
+      <nav id='nav' aria-label='Menu Principal'>
+        <ul className={cn(st.headerMenu, menuMobile && st.active)}>
           {navItems.map(({ text, href }, index) => (
             <li key={index}>
               <a href={href}>{text}</a>

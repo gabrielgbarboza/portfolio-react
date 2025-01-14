@@ -1,12 +1,12 @@
 .card-container
   display: grid
   grid-template-columns: 1fr 1fr
-  margin-bottom: 120px
+  margin-bottom: 80px
   
   
 
 .cards-introducao
-  padding: 80px 0px 80px 0px
+  padding: 0px 0px 80px 0px
   display: grid
   grid-template-columns: 1fr 1fr
   
@@ -41,6 +41,11 @@
     height: 347px
     border-radius: 12px
     place-self: center center
+    transition: transform 0.3s ease
+    z-index: 200
+
+    &:hover
+      transform: scale(1.6)
 
 .card-descricao
   display: grid

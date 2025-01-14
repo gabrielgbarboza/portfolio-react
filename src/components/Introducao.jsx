@@ -10,8 +10,8 @@ export default function Introducao() {
         <div className={st.introducaoDescricao}>
           <h1 className='title large-size'>Prazer, Gabriel Barboza</h1>
           <p className='text'>
-            De professor a futuro desenvolvedor: um profissional em transição de
-            carreira focado em Desenvolvimento Web.
+            De professor a desenvolvedor: um profissional em transição de
+            carreira, motivado e pronto para abraçar novas oportunidades.
           </p>
           <div className={st.introducaoContato}>
             <a href='#contato'>CONTACTE-ME</a>
