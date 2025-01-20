@@ -41,11 +41,11 @@
     height: 347px
     border-radius: 12px
     place-self: center center
-    transition: transform 0.3s ease
-    z-index: 200
+    transition: transform 0.3s ease-in-out
+    z-index: 2
 
     &:hover
-      transform: scale(1.6)
+      transform: scale(1.8)
 
 .card-descricao
   display: grid
@@ -107,28 +107,29 @@
     font-weight: 600
     color: #d3e97A
     text-transform: uppercase
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      width: 0
+      height: 2px
+      bottom: -2px
+      left: 0
+      background-color: #d3e97A
+      transition: width 0.3s ease-in-out
+
+    &:hover::after
+      width: 100%
 
 .img-arrow
     place-self: center
-    width: 15px
-    height: 15px
+   
 
 .img-github
   width: 21
   height: 21
   
-
-    
-
-  
-
-  
-  
-    
-   
-    
-
-    
 
 .projetos-descricao
   grid-column: 2

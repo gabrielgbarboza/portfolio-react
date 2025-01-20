@@ -1,6 +1,4 @@
 import st from '../assets/styles/ProjetosECursos.module.sass';
-import arrow from '../assets/img/arrow.svg';
-import logoGithubGreen from '../assets/img/logoGithubGreen.svg';
 
 export default function ContentCard({ items }) {
   if (!items || items.length === 0) {
@@ -10,7 +8,21 @@ export default function ContentCard({ items }) {
     <section aria-label='Items'>
       {items.map(
         (
-          { type, tipo, imagem, titutlo, detalhe, ano, area, ver, github },
+          {
+            type,
+            tipo,
+            imagem,
+            titutlo,
+            detalhe,
+            ano,
+            area,
+            ver,
+            verLink,
+            arrow,
+            github,
+            githubLink,
+            githubLogo,
+          },
           index
         ) => (
           <article
@@ -37,12 +49,22 @@ export default function ContentCard({ items }) {
                 </div>
               </div>
               <div className={st.cardDescricaoLinks}>
-                <a href='/' aria-label={`Live demo for ${titutlo}`}>
+                <a
+                  href={verLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label={`Live demo for ${titutlo}`}
+                >
                   {ver} <img className={st.imgArrow} src={arrow} alt='' />
                 </a>
-                <a href='/' aria-label={`See ${titutlo} on GitHub`}>
+                <a
+                  href={githubLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label={`See ${titutlo} on GitHub`}
+                >
                   {github}{' '}
-                  <img className={st.imgGithub} src={logoGithubGreen} alt='' />{' '}
+                  <img className={st.imgGithub} src={githubLogo} alt='' />{' '}
                 </a>
               </div>
             </div>

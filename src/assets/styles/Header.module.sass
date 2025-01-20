@@ -21,6 +21,23 @@
     display: block
     font-size: 1.8rem
     line-height: 1em
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      top: 95%
+      width: 0
+      height: 2px
+      bottom: -2px
+      left: 15%
+      background-color: #c7c7c7
+      transition: width 0.3s ease-in-out
+      max-width: 70%
+      
+
+    &:hover::after
+      width: 100%
 
 .header-botao
   display: none
