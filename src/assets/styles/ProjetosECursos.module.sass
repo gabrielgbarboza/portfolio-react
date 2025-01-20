@@ -3,17 +3,27 @@
   grid-template-columns: 1fr 1fr
   margin-bottom: 80px
   
-  
 
 .cards-introducao
   padding: 0px 0px 80px 0px
   display: grid
   grid-template-columns: 1fr 1fr
+  position: relative
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: 135%
+    left: 0
+    right: 0
+    height: 0.5px
+    background-color: #484848
+    max-width: 1440px
+    margin: 0 auto
   
   p
     grid-column: 1
     display: block
-  
 
     
 
@@ -133,6 +143,7 @@
 
 .projetos-descricao
   grid-column: 2
+  
 
  
   
