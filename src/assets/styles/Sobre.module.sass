@@ -36,9 +36,37 @@
     border-color: #484848
     border-radius: 100px
     
+@media only screen and (max-width: 1023px)
+  .sobre-container
+    grid-template-columns: 1fr
+    padding-top: 40px
+    padding-bottom: 40px
+  
+    h1
+      margin-bottom: 20px
 
-    
+  .sobre-habilidades
+    grid-template-columns: 1fr
 
+  .lista-habilidades
+    grid-column: 1
+
+@media only screen and (max-width: 767px)
+  .sobre-descricao
+    margin-bottom: 40px
+
+  .lista-habilidades
+    ul
+      font-size: 1.4rem
+      gap: 10px
+      
+    li
+      padding: 10px 20px
+      font-weight: normal
+      border-radius: 50px
+      border: solid 1px
+      border-color: #484848
+      
 
 
 

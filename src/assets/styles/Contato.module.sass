@@ -55,8 +55,37 @@
 
 footer
   grid-column: 1
-  
+
+@media only screen and (max-width: 1023px)
+  .contato
+    grid-template-columns: 1fr
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 40px
+    padding-bottom: 40px
     
 
+  .contato-formulario
+    grid-column: 1
+    width: 100%
+  
+  section
+    footer
+      align-self: center
+      text-align: center
+  
+@media only screen and (max-width: 375px)
+  .contato
+    p
+      display: block
+      max-width: 100%
+      margin-bottom: 10px
+    a
+      display: block
+
+
+  .contato-formulario
+    max-width: 70%  
+  
   
 

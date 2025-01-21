@@ -1,4 +1,4 @@
-.app-header
+.header-container
   max-width: 1440px
   display: flex
   justify-content: space-between
@@ -6,9 +6,9 @@
   margin: 0px
   align-items: center
  
-
 .header-menu
   display: flex
+  flex-wrap: wrap
   gap: 5px
   justify-content: centers
 
@@ -21,75 +21,92 @@
     display: block
     font-size: 1.8rem
     line-height: 1em
-    position: relative
-
-    &::after
-      content: ''
-      position: absolute
-      top: 95%
-      width: 0
-      height: 2px
-      bottom: -2px
-      left: 15%
-      background-color: #c7c7c7
-      transition: width 0.3s ease-in-out
-      max-width: 70%
-      
-
-    &:hover::after
-      width: 100%
 
 .header-botao
   display: none
 
-@media (max-width: 800px)
+@media only screen and (max-width: 1032px)
+  .header-container
+    padding: 50px 15px
+
   .header-botao
     display: flex
+    flex-direction: column
     background:  #0a0a0a
-    border: none
+    border: 2px solid #222222
+    border-radius: 10px
     padding: 15px 10px
     align-items: center
+    transition: left 0.3s ease-in-out
     position: absolute
-    left: 100%
+    left: 80%
+    z-index: 3
     
     &::before
       content: ' '
       display: inline-block
-      height: 2px
+      height: 1px
       width: 32px
       background: #C7C7C7
-      box-shadow: 0 12px #c7c7c7, 0 -12px  #c7c7c7
-      z-index: 300
-      
+      margin-bottom: 12px
+
+    &::after
+      content: ' '
+      display: inline-block
+      height: 1px
+      width: 32px
+      background: #C7C7C7     
 
   .header-menu
-    display: block
+    display: flex
+    flex-direction: column
+    align-items: center
     background: #0a0a0a
-    max-width: 120px
-    left: 100%
-    position: absolute
     z-index: -1
     opacity: 0
-    padding: 60px 0 5px 0
-    border-radius: 10px
-    box-shadow: 2px 2px 2px 0 #0a0a0a
-    transition: .5s opacity
+    display: none
+    position: relative
+    
     &.active
-      z-index: 200
+      display: flex
+      flex-direction: column
+      padding: 5px 0px 40px 0px 
+      position: absolute
+      left: 0
+      top: 15%
       opacity: 1
-
+      z-index: 200
+      width: 100%
       
 
-  .header-menu 
-    a
-      padding: 8px 12px
-  
-  .app-header
-    img
-      max-width: 200px
-      height: 100%
+      a
+        width: 100%
+        text-align: center
+        padding: 10px 20px
+        color: #fff
+        border-radius: 20px
+        border: 1px solid #222222
+        font-size: 1.5rem
+        font-weight: bold
+        text-transform: uppercase
+        
+@media only screen and (max-width: 767px)
+  .logo-gabriel
+    max-width: 250px
  
+@media only screen and (max-width: 373px)
+  .header-container
+    justify-content: start
+  
+  .header-botao
+    left: 0
+  
+  .header-menu
+    &.active
+      top: 12%  
 
+  .logo-gabriel
+    display: none
     
     
 

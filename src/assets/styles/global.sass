@@ -69,4 +69,55 @@ img
   html
     font-size: 8px
 
+@media only screen and (max-width:1023px)
+  .container
+    width: 90%
+    max-width: 1220px
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+    *,
+    *::before,
+    *::after
+      box-sizing: border-box
+  
+  .text
+    font-size: 1.6rem
+    line-height: 1.6em
+    
+    &.title-manrope
+      font-size: 2.8rem
+    
+  .title
+    &.large-size
+      font-size: 6.0rem
+      line-height: 1.0em
+    &.medium-size
+      font-size: 4.5rem
+
+  html
+    font-size: 10px
+
+@media only screen and (max-width: 767px)
+  .container
+    padding-left: 15px
+    padding-right: 15px
+  
+  .text
+    font-size: 1.6rem
+    
+    &.title-manrope
+      font-size: 2.4rem
+
+  .title
+    &.large-size
+      font-size: 5.7rem
+    &.medium-size
+      font-size: 4.3rem
+
+@media only screen and (max-width: 540px)
+  .container
+    max-width: 90%
+
+
 

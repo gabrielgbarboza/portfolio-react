@@ -55,7 +55,7 @@
     z-index: 2
 
     &:hover
-      transform: scale(1.8)
+      transform: scale(1.4)
 
 .card-descricao
   display: grid
@@ -133,7 +133,7 @@
       width: 100%
 
 .img-arrow
-    place-self: center
+  place-self: center
    
 
 .img-github
@@ -144,7 +144,57 @@
 .projetos-descricao
   grid-column: 2
   
+@media only screen and (max-width: 1023px)
+  .cards-introducao
+    grid-template-columns: 1fr
+    max-width: 100%
+    p
+      max-width: 80% 
 
- 
+  .card-container
+    grid-template-columns: 1fr
+    gap: 32px
+    margin-bottom: 96px
+   
+
+  .card-imagem
+    width: 100%
+
+    img
+      width: auto
+      
+      &:hover
+        transform: scale(1.2)
+      
+  .card-descricao
+    padding-left: 0px
+    gap: 32px
+
   
+
+@media only screen and (max-width: 767px)
+  .cards-introducao
+    padding-bottom: 50px
+  
+  .card-container
+    gap: 16px
+
+  .card-imagem
+    max-width: 100%
+    
+    
+    img
+      width: 500px
+      &:hover
+        transform: scale(1.2)
+  
+  .card-descricao
+    max-width: 100%
+ 
+
+  .card-descricao-links a
+    font-size: 1.4rem
+
+
+
   

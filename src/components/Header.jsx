@@ -26,8 +26,8 @@ export default function Header() {
   const [menuMobile, setMenuMobile] = useState(false);
 
   return (
-    <header className={st.appHeader}>
-      <img src={gabriel} alt='Foto de Gabriel' />
+    <header className={st.headerContainer}>
+      <img className={cn(st.logoGabriel)} src={gabriel} alt='Gabriel' />
       <button
         className={st.headerBotao}
         onClick={() => setMenuMobile(!menuMobile)}

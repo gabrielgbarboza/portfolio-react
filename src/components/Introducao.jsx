@@ -6,7 +6,7 @@ import st from '../assets/styles/Introducao.module.sass';
 export default function Introducao() {
   return (
     <section className='container' aria-label='apresentação'>
-      <div className={st.appIntroducao}>
+      <div className={st.introducaoContainer}>
         <div className={st.introducaoDescricao}>
           <h1 className='title large-size'>Prazer, Gabriel Barboza</h1>
           <p className='text'>
@@ -14,9 +14,23 @@ export default function Introducao() {
             carreira, motivado e pronto para abraçar novas oportunidades.
           </p>
           <div className={st.introducaoContato}>
-            <a href='#contato'>CONTACTE-ME</a>
-            <img src={logoLinkedin} alt='' />
-            <img src={logoGithub} alt='' />
+            <a href='#contato' className={st.botaoContato}>
+              CONTACTE-ME
+            </a>
+            <a
+              href='https://linkedin.com/in/gabrielgbarboza'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={logoLinkedin} alt='' />
+            </a>
+            <a
+              href='https://github.com/gabrielgbarboza'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={logoGithub} alt='' />
+            </a>
           </div>
         </div>
         <img
