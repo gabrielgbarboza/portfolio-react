@@ -4,6 +4,9 @@
   place-self: center
   margin-top: 22px
   position: relative
+  max-width: 100%
+  box-sizing: border-box
+  
 
   &::after
     content: ''
@@ -50,18 +53,19 @@
     top: calc(50% - 4px)
     right: 20px
 
-  img
+  a
+    img
     max-width: 54px
     max-height: 54px
 
-.introducao-Foto
-  max-width: 611px
+.introducao-foto
+  max-width: 100%
   border-radius: 10px
+  object-fit: cover
+  object-position: top left
 
 @media only screen and (max-width:1023px)
-  .introducao-foto
-    max-width: 400px
-    border-radius: 10px
+ 
   
   .botao-contato
     img
@@ -103,25 +107,43 @@
     
 
 @media only screen and (max-width: 767px)
+  .introducao-container
+    margin-top: 11px
+    
   .introducao-descricao
+    margin-right: 0px 
     h1,
     p
-      max-width: 100%
-
-@media only screen and (max-width: 375px)
-  .introducao-container
-    padding: 0px 0px 0px 30px
-  
+      width: 100%
 
   .botao-contato
     padding-right: 70px
-    padding-top: 8px
-    padding-bottom: 8px
+    padding-top: 15px
+    padding-bottom: 15px
    
   .introducao-foto
-    max-width: 260px
-    object-fit: cover
-    object-position: top left
+    max-width: 100%
+    margin-top: 20px
 
+@media only screen and (max-width: 500px)
+  .botao-contato
+    padding-left: 5px
+    padding-right: 60px
+    padding-top: 11px
+    padding-bottom: 11px
+    font-size: 1.4rem
 
+    &::after
+      width: 30px
+      height: 30px
+    &::before
+      font-size: 20px
+    
+  a
+    img 
+      max-width: 40px
+      max-height: 40px  
+
+     
+      
 

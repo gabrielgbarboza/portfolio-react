@@ -10,6 +10,7 @@ body
   margin: 0px auto
   color: #c7c7c7
   max-width: 1440px
+  // overflow-x: hidden
 
 .container
   display:block
@@ -17,6 +18,7 @@ body
   width: 100%
   margin: 0 auto
   padding-bottom: 80px
+  box-sizing: border-box
 
 a, button
   cursor: pointer
@@ -63,6 +65,7 @@ img
   max-width: 100%
   display: block
 
+
 @media only screen and (max-width: 1439px) 
   .container
     width: 80%
@@ -71,15 +74,11 @@ img
 
 @media only screen and (max-width:1023px)
   .container
-    width: 90%
-    max-width: 1220px
+    width: 100%
     padding-left: 15px
     padding-right: 15px
     margin: 0 auto
-    *,
-    *::before,
-    *::after
-      box-sizing: border-box
+    
   
   .text
     font-size: 1.6rem
@@ -102,6 +101,9 @@ img
   .container
     padding-left: 15px
     padding-right: 15px
+    max-width: 100%
+    margin-right: 0px
+    margin-left: 0px
   
   .text
     font-size: 1.6rem
@@ -114,10 +116,11 @@ img
       font-size: 5.7rem
     &.medium-size
       font-size: 4.3rem
+    
+  html
+    font-size: 9px
 
-@media only screen and (max-width: 540px)
-  .container
-    max-width: 90%
+ 
 
 
 

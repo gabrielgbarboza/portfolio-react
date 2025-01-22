@@ -2,6 +2,7 @@
   display: grid
   grid-template-columns: 1fr 1fr
   margin-bottom: 80px
+  max-width: 100%
   
 
 .cards-introducao
@@ -31,8 +32,8 @@
   display: grid
   grid-column: 1
   background: #1a1a1a
-  width: 600px
-  height: 600px
+  width: 100%
+  height: auto
   border-radius: 12px
   
   
@@ -47,8 +48,9 @@
     margin: 12px 0px 0px 12px
 
   img
-    width: 486px
-    height: 347px
+    margin-top: 20px
+    width: 85%
+    height: 80%
     border-radius: 12px
     place-self: center center
     transition: transform 0.3s ease-in-out
@@ -148,8 +150,9 @@
   .cards-introducao
     grid-template-columns: 1fr
     max-width: 100%
+    padding-bottom: 64px
     p
-      max-width: 80% 
+      max-width: 50ch 
 
   .card-container
     grid-template-columns: 1fr
@@ -178,15 +181,6 @@
   
   .card-container
     gap: 16px
-
-  .card-imagem
-    max-width: 100%
-    
-    
-    img
-      width: 500px
-      &:hover
-        transform: scale(1.2)
   
   .card-descricao
     max-width: 100%
@@ -194,6 +188,32 @@
 
   .card-descricao-links a
     font-size: 1.4rem
+  
+  .card-imagem
+    height: auto
+    align-content: end
+    margin-bottom: 35px
+
+    img
+      margin-top: 50px
+      max-width: 85%
+      width: 100%
+
+      &:hover
+        transform: none
+    
+    span
+      margin-top: 8px
+      margin-left: 8px
+      font-size: 1.3rem
+      padding: 6px 14px
+
+  .card-descricao-links
+    margin-bottom: 60px
+    display: flex
+    flex-wrap: wrap
+    
+    
 
 
 

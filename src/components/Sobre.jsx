@@ -13,15 +13,15 @@ export default function SobreMim() {
             Desenvolverdor Web, focado em JavaScript e React.js
           </p>
           <p className='text'>
-            Educador em transição para Desenvolvimento Web, com foco em lógica
-            de programação e JavaScript. Estou buscando oportunidades de estágio
-            ou programas de trainee para aplicar minhas habilidades em projetos
-            reais. Minha experiência como professor e pesquisador desenvolveu
-            minhas habilidades interpessoais e organizacionais, como comunicação
-            clara, trabalho em equipe e adaptabilidade — essenciais para
-            ambientes colaborativos e ágeis. Atualmente, estou construindo uma
-            base sólida em desenvolvimento web, com foco em dominar JavaScript e
-            as melhores práticas de programação.
+            Educador em transição de carreira para Desenvolvimento Web, com foco
+            em lógica de programação e JavaScript. Estou buscando oportunidades
+            de estágio ou programas de trainee para aplicar minhas habilidades
+            em projetos reais. Minhas experiências como professor e pesquisador
+            desenvolveram minhas habilidades interpessoais e organizacionais,
+            como comunicação clara, trabalho em equipe e adaptabilidade —
+            essenciais para ambientes colaborativos e ágeis. Atualmente, estou
+            construindo uma base sólida em desenvolvimento web, com foco em
+            dominar JavaScript e as melhores práticas de programação.
           </p>
         </div>
         <section className={st.sobreHabilidades}>

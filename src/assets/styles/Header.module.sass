@@ -1,5 +1,6 @@
 .header-container
   max-width: 1440px
+  max-width: 100%
   display: flex
   justify-content: space-between
   padding: 24px 60px 24px 60px
@@ -27,7 +28,7 @@
 
 @media only screen and (max-width: 1032px)
   .header-container
-    padding: 50px 15px
+    padding: 30px 15px
 
   .header-botao
     display: flex
@@ -94,7 +95,6 @@
   .logo-gabriel
     max-width: 250px
  
-@media only screen and (max-width: 373px)
   .header-container
     justify-content: start
   
@@ -103,17 +103,22 @@
   
   .header-menu
     &.active
-      top: 18%  
+      top: 10%  
 
   .logo-gabriel
     width: 200px
     
-    
-
-
-    
-
-
+@media only screen and (max-width: 300px)
+  .logo-gabriel
+    opacity: 0
+    z-index: -1
+  
+  .header-botao
+    left: 0%
+  
+  .header-menu
+    &.active
+      top: 10%
 
 
 

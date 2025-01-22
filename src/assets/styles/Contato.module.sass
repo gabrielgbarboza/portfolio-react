@@ -2,6 +2,8 @@
   display: grid
   grid-template-columns: 1fr 1fr
   position: relative
+  max-width: 100%
+  box-sizing: border-box
 
   &::after
     content: ''
@@ -59,8 +61,8 @@ footer
 @media only screen and (max-width: 1023px)
   .contato
     grid-template-columns: 1fr
-    padding-left: 30px
-    padding-right: 30px
+    padding-left: 0px
+    padding-right: 0px
     padding-top: 40px
     padding-bottom: 40px
     

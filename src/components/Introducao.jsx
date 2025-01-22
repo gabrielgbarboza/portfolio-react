@@ -2,11 +2,12 @@ import logoLinkedin from '../assets/img/logoLinkedin.svg';
 import logoGithub from '../assets/img/logoGithub.svg';
 import gabrielIntroducao from '../assets/img/gabrielIntroducao.png';
 import st from '../assets/styles/Introducao.module.sass';
+import cn from 'classnames';
 
 export default function Introducao() {
   return (
     <section className='container' aria-label='apresentação'>
-      <div className={st.introducaoContainer}>
+      <div className={cn(st.introducaoContainer)}>
         <div className={st.introducaoDescricao}>
           <h1 className='title large-size'>Prazer, Gabriel Barboza</h1>
           <p className='text'>
