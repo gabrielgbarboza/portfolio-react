@@ -45,13 +45,17 @@ export default function Contato() {
             action='/'
           >
             {/* Formulario Netlify */}
-            <input type='hidden' name='form-name' value='formulario-contato' />
+            <input
+              type='hidden'
+              name='formulario-contato'
+              value='formulario-contato'
+            />
             <input type='hidden' name='bot-field' />
             <label className='text' htmlFor='Nome'>
               Nome
             </label>
             <input type='text' id='usuário' name='Nome' required />
-            <label className='text' htmlFor='email'>
+            <label className='text' htmlFor='Email'>
               Email
             </label>
             <input
@@ -65,7 +69,7 @@ export default function Contato() {
               Assunto
             </label>
             <input type='text' id='Assunto' name='Assunto' required />
-            <label className='text' htmlFor='mensagem'>
+            <label className='text' htmlFor='Mensagem'>
               Mensagem
             </label>
             <textarea
