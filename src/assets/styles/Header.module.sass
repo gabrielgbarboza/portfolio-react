@@ -22,6 +22,25 @@
     display: block
     font-size: 1.8rem
     line-height: 1em
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 28px
+      bottom: 0
+      left: 13px
+      width: 0
+      height: 2px
+      background-color: #c7c7c7
+      transition: width 0.3s ease
+      
+
+    &:hover::before
+      left: 13px
+      width: 70%
+      
+
 
 .header-botao
   display: none
@@ -40,7 +59,7 @@
     align-items: center
     transition: left 0.3s ease-in-out
     position: absolute
-    left: 80%
+    left: 90%
     z-index: 3
     
     &::before
@@ -74,7 +93,7 @@
       padding: 5px 0px 40px 0px 
       position: absolute
       left: 0
-      top: 15%
+      top: 13%
       opacity: 1
       z-index: 200
       width: 100%
@@ -90,6 +109,9 @@
         font-size: 1.5rem
         font-weight: bold
         text-transform: uppercase
+
+        &::before
+          content: none
         
 @media only screen and (max-width: 767px)
   .logo-gabriel
@@ -103,7 +125,7 @@
   
   .header-menu
     &.active
-      top: 10%  
+      top: 15%  
 
   .logo-gabriel
     width: 200px
@@ -114,7 +136,7 @@
     z-index: -1
   
   .header-botao
-    left: 0%
+    left: 5%
   
   .header-menu
     &.active
