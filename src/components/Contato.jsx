@@ -41,9 +41,10 @@ export default function Contato() {
             name='formulario-contato'
             method='POST'
             action='/'
-            date-netlify='true'
+            data-netlify='true'
             netlify
           ></form>
+          <input type='hidden' name='form-name' value='formulario-contato' />
           <label className='text' htmlFor='Nome'>
             Nome
           </label>
