@@ -40,10 +40,12 @@ export default function Contato() {
             id='formulario'
             name='formulario-contato'
             method='POST'
-            netlify
-            action='/success'
+            data-netlify='true'
+            netlify-honeypot='bot-field'
+            action='/'
           >
-            <input type='hidden' value='formulario-contato' />
+            {/* Formulario Netlify */}
+            <input type='hidden' name='form-name' value='formulario-contato' />
             <label className='text' htmlFor='Nome'>
               Nome
             </label>
