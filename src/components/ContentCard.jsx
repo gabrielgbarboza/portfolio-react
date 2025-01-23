@@ -38,7 +38,7 @@ export default function ContentCard({ items }) {
               <h3 className='text title-manrope'>{titutlo}</h3>
               <p className='text'>{detalhe}</p>
               <div className={st.cardDescricaoDados}>
-                <h4>PROJECT INFO</h4>
+                <h4>{type} INFO</h4>
                 <div>
                   <span>Ano</span>
                   <span>{ano}</span>

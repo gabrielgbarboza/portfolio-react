@@ -19,8 +19,20 @@ export default function Contato() {
             Para mais informações, acesse os links abaixo
           </span>
           <div className={st.contatoLogos}>
-            <img src={logoLinkedin} alt='' />
-            <img src={logoGithub} alt='' />
+            <a
+              href='https://www.linkedin.com/in/gabrielgbarboza/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={logoLinkedin} alt='' />
+            </a>
+            <a
+              href='https://www.https://github.com/gabrielgbarboza'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={logoGithub} alt='' />
+            </a>
           </div>
         </div>
         <div className={st.contatoFormulario}>

@@ -10,7 +10,7 @@ import arrow from '../assets/img/arrow.svg';
 
 const cursosCards = [
   {
-    type: 'Curso',
+    type: 'COURSE',
     tipo: 'Curso em Vídeo',
     imagem: cursoAlgoritmo,
     titutlo: 'Curso de Algoritmo',
@@ -27,7 +27,7 @@ const cursosCards = [
     githubLogo: null,
   },
   {
-    type: 'Curso',
+    type: 'COURSE',
     tipo: 'Origamid',
     imagem: cursoHtmlECss,
     titutlo: 'Html e CSS para iniciantes',
@@ -44,7 +44,7 @@ const cursosCards = [
     githubLogo: null,
   },
   {
-    type: 'Curso',
+    type: 'COURSE',
     tipo: 'Escola Congenial',
     imagem: cursoCongenial,
     titutlo: 'Lógica de Programação em C++',
@@ -61,7 +61,7 @@ const cursosCards = [
     githubLogo: null,
   },
   {
-    type: 'Curso',
+    type: 'COURSE',
     tipo: 'Alura',
     imagem: cursoinitProgramacao,
     titutlo: 'Iniciante em Programação',
@@ -78,7 +78,7 @@ const cursosCards = [
     githubLogo: null,
   },
   {
-    type: 'Curso',
+    type: 'COURSE',
     tipo: 'Alura',
     imagem: cursoGitGithub,
     titutlo: 'Git e Github: compartilhando e colaborando em projetos',

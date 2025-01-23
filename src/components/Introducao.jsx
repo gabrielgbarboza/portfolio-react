@@ -16,7 +16,7 @@ export default function Introducao() {
           </p>
           <div className={st.introducaoContato}>
             <a href='#contato' className={st.botaoContato}>
-              CONTACTE-ME
+              CONTATE-ME
             </a>
             <a
               href='https://linkedin.com/in/gabrielgbarboza'

@@ -13,15 +13,16 @@ export default function SobreMim() {
             Desenvolverdor Web, focado em JavaScript e React.js
           </p>
           <p className='text'>
-            Educador em transição de carreira para Desenvolvimento Web, com foco
-            em lógica de programação e JavaScript. Estou buscando oportunidades
-            de estágio ou programas de trainee para aplicar minhas habilidades
-            em projetos reais. Minhas experiências como professor e pesquisador
-            desenvolveram minhas habilidades interpessoais e organizacionais,
-            como comunicação clara, trabalho em equipe e adaptabilidade —
-            essenciais para ambientes colaborativos e ágeis. Atualmente, estou
-            construindo uma base sólida em desenvolvimento web, com foco em
-            dominar JavaScript e as melhores práticas de programação.
+            Sou um educador em transição de carreira para área de
+            desenvolvimento (WEB & afins). No momento, busco oportunidades de
+            estágio ou programas de trainee para aplicar meus conhecimentos em
+            projetos reais. Minhas experiências como professor e pesquisador
+            desenvolveram soft skills interpessoais e organizacionais
+            importantes, como comunicação clara, trabalho em equipe e
+            adaptabilidade — essenciais para ambientes colaborativos e ágeis.
+            Atualmente, estou consolidando minhas habilidades em Desenvolvimento
+            Web, com foco em dominar JavaScript e as melhores práticas de
+            programação, como clean code, refactoring e code reviews.
           </p>
         </div>
         <section className={st.sobreHabilidades}>
@@ -30,9 +31,9 @@ export default function SobreMim() {
           </div>
           <div>
             <p className='text'>
-              Estou construindo uma base sólida em Desenvolvimento Web e Lógica
-              de Programação. Tenho facilidade em aprender rapidamente e trago
-              uma excelente bagagem interpessoal.{' '}
+              Estou construindo uma base sólida em Lógica de Programação e
+              Denvolvimento Web. Aprendo rápido e com facilidade, me dê
+              instruções do que fazer e te entregarei o esperado.{' '}
             </p>
           </div>
           <div className={st.listaHabilidades}>

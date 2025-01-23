@@ -10,7 +10,7 @@ import logoGithubGreen from '../assets/img/logoGithubGreen.svg';
 
 const projetosCards = [
   {
-    type: 'Projetos',
+    type: 'PROJECT',
     tipo: 'JavaScript',
     imagem: animaisFantasticos,
     titutlo: 'Animais Fantásticos',
@@ -26,7 +26,7 @@ const projetosCards = [
     githubLogo: null,
   },
   {
-    type: 'Projetos',
+    type: 'PROJECT',
     tipo: 'C++',
     imagem: bloonsTd,
     titutlo: 'Desafios Blonns TD',
@@ -34,16 +34,16 @@ const projetosCards = [
       'Neste desafio da Escola Congeial, desenvolvi a lógica de um jogo Tower Defense inspirado no Bloons TD 6. O jogo consiste em rodadas progressivamente mais difíceis, onde cada balão possui uma quantidade necessária de dano para ser estourado. Na rodada 100, os macacos enfrentam o Big Airship of Doom (BAD), que requer 28.000 de dano para ser destruído. O desafio envolveu cálculos de dano por segundo e lógica de jogo para determinar se os macacos conseguem vencer o BAD antes que ele invada o território.',
     ano: '2025',
     area: 'programming logic',
-    ver: 'Live demo',
-    verLink: 'https://app.congenial.com.br/course/3',
-    arrow: arrow,
-    github: 'See on gitHub',
-    githubLink: 'https://github.com/gabrielgbarboza/challenges-C-',
-    githubLogo: logoGithubGreen,
+    ver: 'See on gitHub',
+    verLink: 'https://github.com/gabrielgbarboza/challenges-C-',
+    arrow: logoGithubGreen,
+    github: null,
+    githubLink: null,
+    githubLogo: null,
   },
   {
-    type: 'Projetos',
-    tipo: 'Desafios',
+    type: 'PROJECT',
+    tipo: 'JavaScript',
     imagem: jogoDoNumeroSecreto,
     titutlo: 'Jogo do Número Secreto',
     detalhe:
@@ -58,7 +58,7 @@ const projetosCards = [
     githubLogo: logoGithubGreen,
   },
   {
-    type: 'Projetos',
+    type: 'PROJECT',
     tipo: 'JavaScript',
     imagem: carrinhoDeCompras,
     titutlo: 'Carrinho de Compras',
