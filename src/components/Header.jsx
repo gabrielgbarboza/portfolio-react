@@ -27,7 +27,9 @@ export default function Header() {
 
   return (
     <header className={st.headerContainer}>
-      <img className={cn(st.logoGabriel)} src={gabriel} alt='Gabriel' />
+      <a href='#home'>
+        <img className={cn(st.logoGabriel)} src={gabriel} alt='Gabriel' />
+      </a>
       <button
         className={st.headerBotao}
         onClick={() => setMenuMobile(!menuMobile)}

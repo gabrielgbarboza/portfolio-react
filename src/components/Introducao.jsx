@@ -6,7 +6,7 @@ import cn from 'classnames';
 
 export default function Introducao() {
   return (
-    <section className='container' aria-label='apresentação'>
+    <section id='home' className='container' aria-label='apresentação'>
       <div className={cn(st.introducaoContainer)}>
         <div className={st.introducaoDescricao}>
           <h1 className='title large-size'>Prazer, Gabriel Barboza</h1>

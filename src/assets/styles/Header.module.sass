@@ -3,15 +3,24 @@
   max-width: 100%
   display: flex
   justify-content: space-between
-  padding: 24px 60px 24px 60px
+  padding: 24px 60px 15px 60px
   margin: 0px
   align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  background-color: #0a0a0a
+  border-radius: 4px
+  
  
 .header-menu
   display: flex
   flex-wrap: wrap
   gap: 5px
   justify-content: centers
+  
 
 .header-menu 
   a
@@ -60,7 +69,7 @@
     transition: left 0.3s ease-in-out
     position: absolute
     left: 90%
-    z-index: 3
+    z-index: 1001
     
     &::before
       content: ' '
@@ -121,7 +130,7 @@
     justify-content: start
   
   .header-botao
-    left: 80%
+    left: 83%
   
   .header-menu
     &.active
