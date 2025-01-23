@@ -36,7 +36,14 @@ export default function Contato() {
           </div>
         </div>
         <div className={st.contatoFormulario}>
-          <form action=''></form>
+          <form
+            id='formulario'
+            name='formulario-contato'
+            method='POST'
+            action='/'
+            date-netlify='true'
+            netlify
+          ></form>
           <label className='text' htmlFor='Nome'>
             Nome
           </label>
@@ -58,7 +65,9 @@ export default function Contato() {
             Mensagem
           </label>
           <textarea id='mensagem' name='mensagem' rows='10'></textarea>
-          <button className={st.contatoButton}>Enviar</button>
+          <button type='submit' className={st.contatoButton}>
+            Enviar
+          </button>
         </div>
       </section>
       <footer>
