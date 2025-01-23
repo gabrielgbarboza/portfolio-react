@@ -31,7 +31,15 @@ export default function Contato() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formDataObject).toString(),
     })
-      .then(() => alert('Formulário enviado com sucesso!'))
+      .then(() => {
+        alert('Formulário enviado com sucesso!');
+        setFormData({
+          nome: '',
+          email: '',
+          assunto: '',
+          mensagem: '',
+        });
+      })
       .catch((error) => alert('Erro ao enviar formulário: ' + error));
   };
   return (
