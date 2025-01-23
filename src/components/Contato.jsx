@@ -2,8 +2,38 @@ import st from '../assets/styles/Contato.module.sass';
 import cn from 'classnames';
 import logoLinkedin from '../assets/img/logoLinkedin.svg';
 import logoGithub from '../assets/img/logoGithub.svg';
+import { useState } from 'react';
 
 export default function Contato() {
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    assunto: '',
+    mensagem: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formDataObject = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formDataObject).toString(),
+    })
+      .then(() => alert('Formulário enviado com sucesso!'))
+      .catch((error) => alert('Erro ao enviar formulário: ' + error));
+  };
   return (
     <section id='contato' className={cn('container')}>
       <section className={st.contato}>
@@ -42,36 +72,54 @@ export default function Contato() {
             method='POST'
             data-netlify='true'
             netlify-honeypot='bot-field'
-            action='/'
+            onSubmit={handleSubmit}
           >
             {/* Formulario Netlify */}
             <input type='hidden' name='form-name' value='formulario-contato' />
             <input type='hidden' name='bot-field' />
-            <label className='text' htmlFor='Nome'>
+            <label className='text' htmlFor='nome'>
               Nome
             </label>
-            <input type='text' id='usuário' name='Nome' required />
-            <label className='text' htmlFor='Email'>
+            <input
+              type='text'
+              id='usuário'
+              name='nome'
+              value={formData.nome}
+              onChange={handleChange}
+              required
+            />
+            <label className='text' htmlFor='email'>
               Email
             </label>
             <input
               type='email'
               id='email'
-              name='Email'
+              name='email'
               placeholder='nome@email.com'
+              value={formData.email}
+              onChange={handleChange}
               required
             />
-            <label className='text' htmlFor='Assunto'>
+            <label className='text' htmlFor='assunto'>
               Assunto
             </label>
-            <input type='text' id='Assunto' name='Assunto' required />
-            <label className='text' htmlFor='Mensagem'>
+            <input
+              type='text'
+              id='Assunto'
+              name='assunto'
+              value={formData.assunto}
+              onChange={handleChange}
+              required
+            />
+            <label className='text' htmlFor='mensagem'>
               Mensagem
             </label>
             <textarea
               id='mensagem'
-              name='Mensagem'
+              name='mensagem'
               rows='10'
+              value={formData.mensagem}
+              onChange={handleChange}
               required
             ></textarea>
             <button type='submit' className={st.contatoButton}>
