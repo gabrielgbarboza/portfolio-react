@@ -42,33 +42,33 @@ export default function Contato() {
             method='POST'
             action='/'
             data-netlify='true'
-            netlify
-          ></form>
-          <input type='hidden' name='form-name' value='formulario-contato' />
-          <label className='text' htmlFor='Nome'>
-            Nome
-          </label>
-          <input type='text' id='usuário' name='nome' />
-          <label className='text' htmlFor='email'>
-            Email
-          </label>
-          <input
-            type='email'
-            id='email'
-            name='email'
-            placeholder='nome@email.com'
-          />
-          <label className='text' htmlFor='Assunto'>
-            Assunto
-          </label>
-          <input type='text' id='Assunto' name='Assunto' />
-          <label className='text' htmlFor='mensagem'>
-            Mensagem
-          </label>
-          <textarea id='mensagem' name='mensagem' rows='10'></textarea>
-          <button type='submit' className={st.contatoButton}>
-            Enviar
-          </button>
+          >
+            <input type='hidden' name='form-name' value='formulario-contato' />
+            <label className='text' htmlFor='Nome'>
+              Nome
+            </label>
+            <input type='text' id='usuário' name='nome' />
+            <label className='text' htmlFor='email'>
+              Email
+            </label>
+            <input
+              type='email'
+              id='email'
+              name='email'
+              placeholder='nome@email.com'
+            />
+            <label className='text' htmlFor='Assunto'>
+              Assunto
+            </label>
+            <input type='text' id='Assunto' name='Assunto' />
+            <label className='text' htmlFor='mensagem'>
+              Mensagem
+            </label>
+            <textarea id='mensagem' name='mensagem' rows='10'></textarea>
+            <button type='submit' className={st.contatoButton}>
+              Enviar
+            </button>
+          </form>
         </div>
       </section>
       <footer>
