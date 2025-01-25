@@ -13,16 +13,14 @@
   z-index: 1000
   background-color: #0a0a0a
   border-radius: 4px
-  
- 
+
 .header-menu
   display: flex
   flex-wrap: wrap
   gap: 5px
   justify-content: centers
-  
 
-.header-menu 
+.header-menu
   a
     font-family: Inter, arial, helvitica
     color: #c7c7c7
@@ -43,13 +41,10 @@
       height: 2px
       background-color: #c7c7c7
       transition: width 0.3s ease
-      
 
     &:hover::before
       left: 13px
       width: 70%
-      
-
 
 .header-botao
   display: none
@@ -61,7 +56,7 @@
   .header-botao
     display: flex
     flex-direction: column
-    background:  #0a0a0a
+    background: #0a0a0a
     border: 2px solid #222222
     border-radius: 10px
     padding: 15px 10px
@@ -70,7 +65,7 @@
     position: absolute
     left: 90%
     z-index: 1001
-    
+
     &::before
       content: ' '
       display: inline-block
@@ -84,7 +79,7 @@
       display: inline-block
       height: 1px
       width: 32px
-      background: #C7C7C7     
+      background: #C7C7C7
 
   .header-menu
     display: flex
@@ -93,20 +88,17 @@
     background: #0a0a0a
     z-index: -1
     opacity: 0
-    display: none
     position: relative
-    
+    padding: 5px 0px 20px 0px
+    position: absolute
+    left: 0
+    top: 80%
+    width: 100%
+    transition: opacity 0.3s ease
+
     &.active
-      display: flex
-      flex-direction: column
-      padding: 5px 0px 20px 0px 
-      position: absolute
-      left: 0
-      top: 80%
       opacity: 1
       z-index: 200
-      width: 100%
-      
 
       a
         width: 100%
@@ -121,36 +113,28 @@
 
         &::before
           content: none
-        
+
 @media only screen and (max-width: 767px)
   .logo-gabriel
     max-width: 250px
- 
+
   .header-container
     justify-content: start
-  
+
   .header-botao
     left: 83%
-  
 
   .logo-gabriel
     width: 200px
-    
+
 @media only screen and (max-width: 300px)
   .logo-gabriel
     opacity: 0
     z-index: -1
-  
+
   .header-botao
     left: 5%
-  
+
   .header-menu
     &.active
       top: 10%
-
-
-
-
-
-
- 
