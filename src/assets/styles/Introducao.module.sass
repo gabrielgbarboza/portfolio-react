@@ -41,6 +41,7 @@
   color: #0a0a0a
   border-radius: 50px
   display: block
+  white-space: nowrap
   position: relative
   &::after
     content: ''
@@ -63,12 +64,51 @@
   object-fit: cover
   object-position: top left
 
+.introducao-resumo
+  a
+    gap: 10px
+    display: inline-block
+    white-space: nowrap
+    text-decoration: none
+    font-size: 1.6rem
+    line-height: 1.5em
+    font-weight: 600
+    color: #d3e97A
+    text-transform: uppercase
+    position: relative
+    padding-top: 5px
+    margin-left: 5px
+    margin-top: 5px
+
+    &::after
+      content: ' ' ''
+      position: absolute
+      width: 0
+      height: 2px
+      bottom: -2px
+      left: 0
+      background-color: #d3e97A
+      transition: width 0.3s ease-in-out
+       
+
+    &:hover::after
+      width: 100%
+  
+  img
+    display: inline
+    margin-left: 10px
+    width: 12px
+
 @media only screen and (max-width:1023px)
  
   
   .botao-contato
     img
       max-width: 100%
+  
+  .introducao-resumo
+    a
+      font-size: 1.4rem
 
 @media only screen and (max-width: 920px)
   .introducao-container
@@ -78,7 +118,8 @@
 
     &::after
       bottom: -8%
-    
+  
+  
   
   .introducao-descricao
     
@@ -108,6 +149,7 @@
         right: 9px
         z-index: 1
     
+  
 
 @media only screen and (max-width: 767px)
   .introducao-container

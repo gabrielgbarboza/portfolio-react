@@ -3,6 +3,8 @@ import logoGithub from '../assets/img/logoGithub.svg';
 import gabrielIntroducao from '../assets/img/gabrielIntroducao.png';
 import st from '../assets/styles/Introducao.module.sass';
 import cn from 'classnames';
+import arrow from '../assets/img/arrow.svg';
+import curriculo from '../assets/archives/curriculo_Gabriel_Barboza.pdf';
 
 export default function Introducao() {
   return (
@@ -31,6 +33,13 @@ export default function Introducao() {
               rel='noopener noreferrer'
             >
               <img src={logoGithub} alt='' />
+            </a>
+          </div>
+          <div className={st.introducaoResumo}>
+            <a href={curriculo} target='_blank' rel='noopener noreferrer'>
+              {' '}
+              Acesse meu Currículo
+              <img className={st.imgArrow} src={arrow} alt='' />
             </a>
           </div>
         </div>
