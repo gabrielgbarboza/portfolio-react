@@ -34,7 +34,11 @@ export default function Header() {
         className={st.headerBotao}
         onClick={() => setMenuMobile(!menuMobile)}
       ></button>
-      <nav id='nav' aria-label='Menu Principal'>
+      <nav
+        id='nav'
+        aria-label='Menu Principal'
+        onClick={() => setMenuMobile(!menuMobile)}
+      >
         <ul className={cn(st.headerMenu, menuMobile && st.active)}>
           {navItems.map(({ text, href }, index) => (
             <li key={index}>
