@@ -43,8 +43,8 @@ export default function Contato() {
       .catch((error) => alert('Erro ao enviar formulário: ' + error));
   };
   return (
-    <section id='contato' className={cn('container')}>
-      <section className={st.contato}>
+    <section className={cn('container')}>
+      <section id='contato' className={st.contato}>
         <div>
           <h1 className='title medium-size'>Contate-me</h1>
           <p className='text'>

@@ -98,8 +98,8 @@ const cursosCards = [
 
 export default function Cursos() {
   return (
-    <section id='cursos' className={cn('container')} aria-label='Cursos'>
-      <header className={st.cardsIntroducao}>
+    <section className={cn('container')} aria-label='Cursos'>
+      <header id='cursos' className={st.cardsIntroducao}>
         <h2 className='title medium-size'>Cursos e certificações</h2>
         <p className='text'>
           {' '}
