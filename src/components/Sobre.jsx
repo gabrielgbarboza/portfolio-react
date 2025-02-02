@@ -41,7 +41,7 @@ export default function SobreMim() {
               <li>HTML</li>
               <li>CSS</li>
               <li>JAVASCRIPT</li>
-              <li>REACTJS</li>
+              <li>REACT JS</li>
               <li>C++</li>
               <li>GIT</li>
               <li>LAYOUT RESPONSIVO</li>
